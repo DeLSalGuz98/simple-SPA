@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #212A40;
+    display: inline-flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    z-index: 20;
+}
+header .div-nameWeb{
+    display: inline-flex;
+    width: 500px;
+    height: auto;
+    padding: 20px 50px;
+}
+header .div-nameWeb h1{
+    color: white;
+}
+header .div-navbar{
+    width: 700px;
+}
+header .div-navbar nav ul{
+    margin-top: 20px;
+}
+header .div-navbar nav ul li{
+    display: inline-flex;
+    width: 150px;
+    height: 50px;
+}
+header .div-navbar nav ul li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+header .div-navbar nav ul li a:hover{
+    background-color: #434F5C;
+    transition: .5s;
+}
+body{
+    width: 100%;
+    background: #89BA2C !important;
+}
+body .container-global{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+/*-----------------section carousel*/
+.section-carousel{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    padding: 50px 70px;
+    background-color: #434f5ca6;
+}
+.section-carousel .container-image-carousel{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+}
+.section-carousel .container-image-carousel .img-carousel{
+    width: 100%;
+    height: 100%;
+}
+/*------------------section one--------------------------------*/
+.section-one{
+    width: 100%;
+    height: 100vh;    
+}
+.section-one .container-habilities{
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+.section-one .container-habilities .div-habilities{
+    height: 5%;   
+} 
+.section-one .container-images-habilities{
+    width: 70%;
+    height: 65%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.section-one .container-images-habilities .container-images{
+    width: max-content;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 100px;
+    margin: 0 auto;
+} 
+.section-one .container-images-habilities .container-images .habilitie-image{
+    width: 170px;
+    height: 200px;
+    transition: 1s;
+}
+.section-one .container-images-habilities .container-images .habilitie-image .image-h{
+    width: 150px;
+    height: 170px;
+    margin: 0 auto;
+    transition: 1s;
+}
+.section-one .container-images-habilities .container-images .habilitie-image:hover .image-h{
+    transform: scale(1.12);
+    transition: 1s;
+} 
+.section-one .container-images-habilities .container-images .habilitie-image .image-h img{
+    width: 100%;
+    height: 100%;
+}
+.section-one .container-images-habilities .container-images .habilitie-image .name-h{
+    text-align: center;
+    padding-top: 10px;
+}
+.section-one .div-video-yt{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    padding: 30px 25%;
+}
+.section-one .div-video-yt .video-yt{
+    width: 50%;
+    height: 100%;
+}
+/*------------------sesction two---------------------------------*/
+.section-two{
+    width: 100%;
+    height: 150vh;
+}
+.div-title{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding: 50px;
+    font-size: 40px;
+    align-items: center;
+}
+.div-iam{
+    background-color: #434f5ca6;  
+}
+.section-two .div-identification{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: #434f5ca6;  
+}
+.section-two .div-identification .div-text{
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+.section-two .div-identification .div-picture{
+    width: 30%;
+    height: 80%;
+}
+.section-two .div-identification .div-picture img{
+    width: 100%;
+    height: 100%;
+}
+.section-two .vision-mision{
+    padding: 20px;
+}
+.section-two .vision-mision .div-mision, .div-vision{
+    display: flex;
+}
+.div-mision .text, .div-vision .text{
+    width: 50%;
+    text-align: justify;
+    padding: 40px;
+}
+.section-two .vision-mision .image{
+    width: 500px;
+    height: 250px;
+}
+.section-two .vision-mision .image img{
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------section tree-------------------------*/
+.section-tree{
+    width: 100%;
+    height: 50vh;
+}
+.section-tree .div-paralax-container{
+    width: 100%;
+    height: 60%;
+}
+.section-tree .div-paralax-container{
+    background-image: url('https://images6.alphacoders.com/333/333000.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+.section-tree .div-paralax-container .div-thanks{
+    width: 40%;
+    height: 80px;
+    margin: auto;
+    background-color: #89BA2C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-tree .div-paralax-container .div-thanks h2{
+    font-size: 40px;
+    transition: 1s;
+}
+.section-tree .div-paralax-container .div-thanks:hover h2{
+    font-size: 50px;
+}
+
+.section-tree .change-text{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.section-tree .change-text .div-input{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.section-tree .change-text .div-input input[type=text]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    outline: none;
+    padding: 1px 5px;
+    transition: 5s;
+    text-align: center;
+}
+.section-tree .change-text .div-input input[type=button]{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: #434F5C;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: .5px;
+    border: none;
+}
+.section-tree .change-text .div-input input[type=button]:hover{
+    background-color: #212A40;
+    letter-spacing: 1px;
+}
+/*-----------------footer----------------------------*/
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #2E2E2E;
+    padding: 30px;
+}
+footer .div-social-container{
+    display: flex;
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+}
+footer .div-social-container .div-img{
+    width: 80px;
+    height: 80px;
+    margin: 5px auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100%;
+}
+footer .div-social-container .div-img a{
+    display: inline-block;
+    color: #2E2E2E;
+    font-size: 35px;
+    transition: .5s;
+}
+footer .div-social-container .div-img:hover a{
+    font-size: 45px;
+    transition: .5s;
+}
